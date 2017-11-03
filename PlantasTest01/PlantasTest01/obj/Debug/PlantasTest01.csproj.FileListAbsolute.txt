@@ -37,3 +37,5 @@ E:\Proyectos\PlantasTest01\PlantasTest01\PlantasTest01\obj\Debug\PlantasTest01.P
 E:\Proyectos\PlantasTest01\PlantasTest01\PlantasTest01\obj\Debug\PlantasTest01.Paginas.PaginaListaEnfermedades.xaml.g.cs
 E:\Proyectos\PlantasTest01\PlantasTest01\PlantasTest01\obj\Debug\PlantasTest01.dll
 E:\Proyectos\PlantasTest01\PlantasTest01\PlantasTest01\obj\Debug\PlantasTest01.pdb
+E:\Proyectos\PlantasTest01\PlantasTest01\PlantasTest01\obj\Debug\PlantasTest01.Paginas.MarterPage.xaml.g.cs
+E:\Proyectos\PlantasTest01\PlantasTest01\PlantasTest01\obj\Debug\PlantasTest01.Paginas.MenuPage.xaml.g.cs

@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace PlantasTest01.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MarterPage : ContentPage
+    public partial class MarterPage : MasterDetailPage
     {
         public MarterPage()
         {
             InitializeComponent();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            App.Navigator = this.Navigator;
         }
     }
 }

@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:paginas="clr-namespace:PlantasTest01.Paginas;assembly=PlantasTest01"
              x:Class="PlantasTest01.Paginas.MarterPage">
-    
+    <MasterDetailPage.Master>
+        <paginas:MenuPage></paginas:MenuPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage x:Name="Navigator">
+            <x:Arguments>
+                <paginas:PaginaListaEnfermedades>
+                    
+                </paginas:PaginaListaEnfermedades>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
 </MasterDetailPage>

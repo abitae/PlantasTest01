@@ -11,11 +11,14 @@ namespace PlantasTest01
     public partial class App : Application
     {
         public static AzureDataService AzureService;
+
+        public static NavigationPage Navigator { get; internal set; }
+
         public App()
         {
             InitializeComponent();
             AzureService = new AzureDataService();
-            MainPage = new NavigationPage(new Paginas.PaginaListaEnfermedades());
+            MainPage = new Paginas.MarterPage();
         }
 
         protected override void OnStart()
