@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlantasTest01.Paginas.PaginaListaEnfermedades">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Label Text="Enfermedades" FontSize="40" HorizontalOptions="Center"/>
+
+            <ListView x:Name="lsvEnfermedades" ItemSelected="lsvEnfermedades_Selected" RowHeight="50">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    
+                                    <Label Text="{Binding Nombre}" TextColor="Blue" FontSize="16"/>
+                                    <Label Text="{Binding Definicion}" HorizontalOptions="StartAndExpand" TextColor="Green" FontSize="16"/>
+                                    <Label Text="{Binding Causas}" HorizontalOptions="StartAndExpand" TextColor="Green" FontSize="12"/>
+                                    <Label Text="{Binding Tratamiento}" HorizontalOptions="EndAndExpand" TextColor="Green" FontSize="12"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnNuevo" Text="Nuevo" Priority="0" Clicked="btnNuevo_Click" Order="Primary" Icon="agregar.png"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlantasTest01.Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,12 @@ namespace PlantasTest01
 {
     public partial class App : Application
     {
+        public static AzureDataService AzureService;
         public App()
         {
             InitializeComponent();
-
-            MainPage = new PlantasTest01.MainPage();
+            AzureService = new AzureDataService();
+            MainPage = new NavigationPage(new Paginas.PaginaListaEnfermedades());
         }
 
         protected override void OnStart()
