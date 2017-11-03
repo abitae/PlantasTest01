@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlantasTest01.Paginas.PaginaEnfermedad">
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="20">
+        <StackLayout Spacing="20" Padding="20"  BackgroundColor="White">
             <Entry x:Name="txtNombre" Placeholder="Nombre" />
 
-            <Entry x:Name="txtDefinicion" Placeholder="Nombre" />
+            <Entry x:Name="txtDefinicion" Placeholder="Definicion" />
 
 
 
-            <Entry x:Name="txtCausas" Placeholder="Correo" />
+            <Entry x:Name="txtCausas" Placeholder="Causas" />
 
-            <Entry x:Name="txtTratamiento" Placeholder="Telefono" />
+            <Entry x:Name="txtTratamiento" Placeholder="Tratamiento" />
 
             
 
@@ -20,7 +20,7 @@
     </ContentPage.Content>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="btnGuardar" Text="Guardar" Priority="0" Clicked="btnGuardar_Click" Order="Primary" Icon="guardar.png"/>
-        <ToolbarItem x:Name="btnEliminar" Text="Eliminar" Priority="1" Clicked="btnEliminar_Click" Order="Primary" Icon="guardar.png"/>
+        <ToolbarItem x:Name="btnGuardar" Text="Guardar" Priority="0" Clicked="btnGuardar_Click" Order="Primary" Icon="ic_shortcut_save.png"/>
+        <ToolbarItem x:Name="btnEliminar" Text="Eliminar" Priority="1" Clicked="btnEliminar_Click" Order="Primary" Icon="ic_shortcut_do_not_disturb_on.png"/>
     </ContentPage.ToolbarItems>
 </ContentPage>
